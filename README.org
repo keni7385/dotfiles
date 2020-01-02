@@ -8,12 +8,12 @@ stow -d dotfiles -t "$HOME" *
 
 ** Configs
 
-  - `dunst` :: Notifications
-  - `ledger` :: Double-entry command line account system
-  - `ranger` :: A console file manager
-  - `scripts` :: Several scripts, such as dmenu utilities
-  - `surf` :: The suckless browser bookmarks
-  - `tmux` :: Terminal multiplexer configuration
-  - `Xorgdotfiles` :: Resource files of X
-  - `zathura` :: A (pdf) document viewer
-  - `zsh` :: User zshell
+  - ~dunst~ :: Notifications
+  - ~ledger~ :: Double-entry command line account system
+  - ~ranger~ :: A console file manager
+  - ~scripts~ :: Several scripts, such as dmenu utilities
+  - ~surf~ :: The suckless browser bookmarks
+  - ~tmux~ :: Terminal multiplexer configuration
+  - ~Xorgdotfiles~ :: Resource files of X
+  - ~zathura~ :: A (pdf) document viewer
+  - ~zsh~ :: User zshell
