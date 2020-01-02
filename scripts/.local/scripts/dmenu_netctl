@@ -1,0 +1,9 @@
+#!/bin/sh
+
+profile=$(netctl list | grep -v "^\*" | dmenu -i -l 10 -p "Choose a connection")
+if output="$(sudo -A netctl switch-to $profile 2>&1)"
+then
+    notify-send -i /usr/share/icons/Adwaita/32x32/devices/network-wireless-symbolic.symbolic.png "Connected to $profile"
+else
+    notify-send -i /usr/share/icons/Adwaita/32x32/devices/network-wireless-symbolic.symbolic.png "Impossible to connected to $profile: $output"
+fi

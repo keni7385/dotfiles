@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# dmenu duck duck go
+# open in surf
+# https://duckduckgo.com/?q=encoded%20text
+
+browser=surf
+
+choice=$(echo "🦆" | dmenu -fn Monospace-12 -sb "#e37151" -sf "#333333" -nf "#f1a031" -nb "#333333" -p "Search DuckDuckGo: ") || exit 1
+
+if [ "$choice" = "🦆" ]; then
+    $browser "https://duckduckgo.com"
+else
+    $browser "https://duckduckgo.com/?q=$choice"
+fi

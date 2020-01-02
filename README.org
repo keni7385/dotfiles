@@ -1,0 +1,15 @@
+* My dotfiles
+
+Use [[https://www.gnu.org/software/stow/][GNU stow]] to link the dotfiles, e.g.: to link all the configurations:
+
+#+BEGIN_SRC sh
+stow -d dotfiles -t "$HOME" *
+#+END_SRC
+
+** Configs
+
+  - zsh :: User zshell
+  - ledger :: Double-entry command line account system
+  - scripts :: Several scripts, such as dmenu utilities
+  - tmux :: Terminal multiplexer configuration
+  - Xorgdotfiles :: Resource files of X
