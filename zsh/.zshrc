@@ -43,6 +43,7 @@ alias dired="ec -e '(progn (dired) (delete-other-windows))'"
 alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
 
 export EDITOR="emacsclient -t"
+export VISUAL="emacsclient -c"
 export PATH="$PATH:$(ruby -e 'print Gem.user_dir')/bin:$HOME/.local/bin:$HOME/.local/scripts"
 export SUDO_ASKPASS="$HOME/.local/scripts/dmenupass"
 export HUNTER_ROOT=/home/andrea/builds/_hunter_root
@@ -58,7 +59,7 @@ smartresize() {
 }
 
 # added by travis gem
-[ -f /home/andrea/.travis/travis.sh ] && source /home/andrea/.travis/travis.sh
+[ -f /home/andrea/.config/.travis/travis.sh ] && source /home/andrea/.config/.travis/travis.sh
 
 #recursive unzipping
 runzip() {

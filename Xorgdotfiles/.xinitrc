@@ -35,7 +35,7 @@ fi
 
 feh --bg-scale ~/Pictures/bg.jpg
 if [ -f "$userbindkeys" ]; then
-    xbindkeys --files "$userbindkeys"
+    xbindkeys --file "$userbindkeys"
 fi
 redshift -O3500
 
