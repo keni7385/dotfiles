@@ -410,8 +410,9 @@
   :mode ("Dockerfile\\'" . dockerfile-mode))
 
 ;; adding files to cmake mode
-(setq load-path (cons (expand-file-name "~/.emacs.d/elpa/cmake-mode-3.10.2") load-path))
-(require 'cmake-mode)
+; (setq load-path (cons (expand-file-name "~/.emacs.d/elpa/cmake-mode-3.10.2") load-path))
+; (require 'cmake-mode)
+(use-package cmake-mode)
 
 ;; auctex confs
 (setq TeX-auto-save t)
