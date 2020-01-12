@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/home/andrea/.config/.oh-my-zsh
+export ZSH=$HOME/.config/.oh-my-zsh
 
 ZSH_THEME="agnoster"
 DISABLE_AUTO_UPDATE="true"
@@ -46,7 +46,8 @@ export EDITOR="emacsclient -t"
 export VISUAL="emacsclient -c"
 export PATH="$PATH:$(ruby -e 'print Gem.user_dir')/bin:$HOME/.local/bin:$HOME/.local/scripts"
 export SUDO_ASKPASS="$HOME/.local/scripts/dmenupass"
-export HUNTER_ROOT=/home/andrea/builds/_hunter_root
+export HUNTER_ROOT=$HOME/builds/_hunter_root
+export GNUPGHOME=$HOME/.config/gnupg
 
 export DEFAULT_USER="$(whoami)"
 prompt_context(){}
@@ -59,7 +60,7 @@ smartresize() {
 }
 
 # added by travis gem
-[ -f /home/andrea/.config/.travis/travis.sh ] && source /home/andrea/.config/.travis/travis.sh
+[ -f $HOME/.config/.travis/travis.sh ] && source $HOME/.config/.travis/travis.sh
 
 #recursive unzipping
 runzip() {
