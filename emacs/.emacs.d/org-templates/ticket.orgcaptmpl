@@ -1,0 +1,7 @@
+** TODO Train %^{Departure} - %^{Destination}
+   SCHEDULED: %^{Date and Time}T
+   :PROPERTIES:
+   :Train: %^{Train |FRECCIABIANCA|FRECCIAROSSA|INTERCITY|REGIONALE_VELOCE|REGIONALE} %^{Train ID}
+   :%^{Ticket kind |PNR|CodiceBiglietto}: %^{Ticket}
+   :Seat: _%^{Seat}_
+   :END:
