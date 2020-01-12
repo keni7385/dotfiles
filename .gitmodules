@@ -1,0 +1,3 @@
+[submodule "private"]
+	path = emacs/.emacs.d/private
+	url = git@github.com:keni7385/emacs-private.git
