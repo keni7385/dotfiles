@@ -8,6 +8,7 @@ stow -d dotfiles -t "$HOME" *
 
 ** Configs
 
+  - ~alacritty~ :: Alacritty terminal emulator
   - ~dunst~ :: Notifications
   - ~doom~ :: Doom Emacs
   - ~emacs~ :: my GNU Emacs configuration
