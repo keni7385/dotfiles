@@ -9,6 +9,7 @@ stow -d dotfiles -t "$HOME" *
 ** Configs
 
   - ~dunst~ :: Notifications
+  - ~doom~ :: Doom Emacs
   - ~emacs~ :: my GNU Emacs configuration
   - ~ledger~ :: Double-entry command line account system
   - ~ranger~ :: A console file manager
